@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reservation request</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="reservation.css">
+</head>
+	
+<body>
+	<div class="p-5 bg-primary text-white text-center">
+		<h1>Reservation Request</h1>
+	  </div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="https://aalcala87.github.io/">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://aalcala87.github.io/game_genres/">Popular Video Game Genres</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://aalcala87.github.io/images_game_systems/">Image Gallery</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://aalcala87.github.io/image_swap_application/">Image Swap App</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="https://aalcala87.github.io/image_swap_application/">Reservation Request</a>
+			</li>
+			</ul>
+		</div>
+	</nav>
+
+	<form action="response.html" method="get"
+    	name="reservation_form" id="reservation_form">
+		<fieldset>
+        	<legend>General Information</legend>
+			<div>
+				<label for="arrival_date">Arrival date:</label>
+				<input type="text" name="arrival_date" id="arrival_date" autofocus>
+				<span>*</span>
+			</div>
+			<div>
+				<label for="nights">Nights:</label>
+				<input type="text" name="nights" id="nights">
+				<span>*</span>
+			</div>
+			<div>
+				<label>Adults:</label>
+				<select name="adults" id="adults">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>        		        		        		
+				</select>
+			</div>
+			<div>
+				<label>Children:</label>
+				<select name="children" id="children">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>        		        		        		
+				</select>
+			</div>        	
+		</fieldset>
+		<fieldset>
+        	<legend>Preferences</legend>
+			<div>
+				<label>Room type:</label>
+				<input type="radio" name="room" id="standard" class="left" checked>Standard	        	
+				<input type="radio" name="room" id="business" class="left">Business
+				<input type="radio" name="room" id="suite" class="left last">Suite
+			</div>
+			<div>
+				<label>Bed type:</label>
+				<input type="radio" name="bed" id="king" class="left" checked>King
+				<input type="radio" name="bed" id="double" class="left last">Double Double
+			</div>
+			<div>
+				<input type="checkbox" name="smoking" id="smoking">Smoking
+			</div>
+		</fieldset>		
+		<fieldset>
+    		<legend>Contact Information</legend>
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name">
+				<span>*</span>
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email">
+				<span>*</span>
+			</div>
+			<div>
+				<label for="phone">Phone:</label>
+				<input type="text" name="phone" id="phone" placeholder="999-999-9999">
+				<span>*</span>
+			</div>
+		</fieldset>
+		<div>
+			<input type="submit" id="submit" value="Submit Request">
+		</div>
+	</form>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="reservation.js"></script>
+</body>
+</html>
