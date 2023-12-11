@@ -20,42 +20,42 @@ $(document).ready(() => {
 
         //Check value is empty
         if (arrivalDate === "") {
-            showError($("#arrival_date"), "Please enter an arrival date.");
+            showError($("#arrival_date"), "This field is required.");
             //Cancel form submission
 			event.preventDefault();
         }
 
         if (nights === "") {
-            showError($("#nights"), "Please enter the number of nights.");
+            showError($("#nights"), "This field is required.");
             event.preventDefault();
         }
 
 		if (name === "") {
-			showError($("#name"), "Please enter your name.");
+			showError($("#name"), "This field is required.");
 			event.preventDefault(); // Cancel form submission
 		}		
 
         //Check if the email address is not provided
         if (email === "") {
-            showError($("#email"), "Please enter an email address.");
+            showError($("#email"), "This field is required.");
             event.preventDefault();
         } else {
             //Check if the email address matches the pattern
             if (!emailPattern.test(email)) {
-                showError($("#email"), "Please enter a valid email address.");
+                showError($("#email"), "Must be a valid email address.");
                 event.preventDefault();
             }
         }
 
         //Check if the number of nights is numeric
         if (isNaN(nights)) {
-            showError($("#nights"), "Number of nights must be numeric.");
+            showError($("#nights"), "Must be numeric.");
             event.preventDefault();
         }
 
         //Check if the phone number is not entered
         if (phone === "") {
-            showError($("#phone"), "Please enter a phone number.");
+            showError($("#phone"), "This field is required.");
             event.preventDefault();
         }
 
